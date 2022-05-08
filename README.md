@@ -60,16 +60,15 @@ python missing_expt.py
 ## Results
 
 
-|             |          |Implementation| In Paper    |
-|             |          |-----|--------|-------------|
-|Model Encoder|Framework |AUPRC|AUCROC  |AUPRC|AUCROC |
+|Model Encoder|          |Implementation| In Paper    |
+|             |          |     |        |             |
+|             |Framework |AUPRC|AUCROC  |AUPRC|AUCROC |
 |-------------|----------|-----|--------|-----|-------|
 |BiLSTM       |EFE       |31.67|79      |52.65|89.89  |
 |             |EFI       |30.62|78.01   |52.54|90.3   |
 |             |LF        |31.72|78.09   |51.67|89.66  |
 |             |LF_pool   |48.08|85.4    |51.82|89.49  |
 |             |SDPRL     |48.96|82.04   |52.77|90.24  |
-|-------------|----------|-----|--------|-----|-------|
 |Transformer  |EFE       |32.55|73.81   |52.31|89.53  |
 |             |EFI       |28.3 |78.81   |52.1 |89.58  |
 |             |LF        |32.57|68.17   |52.61|89.93  |
