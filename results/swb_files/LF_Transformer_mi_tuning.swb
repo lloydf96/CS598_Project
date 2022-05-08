@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH --job-name="LF_Transformer"
+#SBATCH --output="output/LF_Transformer.out"
+#SBATCH --partition=gpux1
+#SBATCH --cpu_per_gpu=16
+#SBATCH --time=12
+
+module load wmlce
+conda activate wmlce-v1.6.2
+cd ..
+cd tuning
+python LF_Transformer_mi.py

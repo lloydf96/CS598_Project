@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH --job-name="EFE_Transformer"
+#SBATCH --output="output/EFE_Transformer.out"
+#SBATCH --partition=gpux1
+#SBATCH --cpu_per_gpu=16
+#SBATCH --time=12
+
+module load wmlce
+conda activate wmlce-v1.6.2
+cd ..
+cd tuning
+python EFE_Transformer_mi.py

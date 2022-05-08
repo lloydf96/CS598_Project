@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH --job-name="missing_expt"
+#SBATCH --output="output/missing_expt.out"
+#SBATCH --partition=gpux4
+#SBATCH --cpu_per_gpu=32
+#SBATCH --time=12
+
+module load wmlce
+conda activate wmlce-v1.6.2
+cd ..
+cd missingModal
+python missing_expt.py

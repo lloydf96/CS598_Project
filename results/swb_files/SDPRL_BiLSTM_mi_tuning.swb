@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH --job-name="SDPRL_BiLSTM"
+#SBATCH --output="output/SDPRL_BiLSTM.out"
+#SBATCH --partition=gpux1
+#SBATCH --cpu_per_gpu=16
+#SBATCH --time=12
+
+module load wmlce
+conda activate wmlce-v1.6.2
+cd ..
+cd tuning
+python SDPRL_BiLSTM_mi.py

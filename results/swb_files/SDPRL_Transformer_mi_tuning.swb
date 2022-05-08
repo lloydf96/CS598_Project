@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH --job-name="SDPRL_Transformer_mi"
+#SBATCH --output="output/SDPRL_Transformer_mi.out"
+#SBATCH --partition=gpux2
+#SBATCH --cpu_per_gpu=16
+#SBATCH --time=8
+
+module load wmlce
+conda activate wmlce-v1.6.2
+cd ..
+cd tuning
+python SDPRL_Transformer_mi.py

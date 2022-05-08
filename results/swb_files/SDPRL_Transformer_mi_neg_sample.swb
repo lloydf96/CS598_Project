@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH --job-name="SDPRL_Transformer_neg_sample"
+#SBATCH --output="SDPRL_Transformer_neg_sample.out"
+#SBATCH --partition=gpux4
+#SBATCH --cpu_per_gpu=16
+#SBATCH --time=8
+
+module load wmlce
+conda activate wmlce-v1.6.2
+cd ..
+cd negSampleExpt
+python SDPRL_Transformer_mi_neg_sample.py
