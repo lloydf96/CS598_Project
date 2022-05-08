@@ -60,16 +60,33 @@ python missing_expt.py
 ## Results
 
 
-|             |          | Span <td colspan=2>Implementation| Span <td colspan=2> In Paper    |
-|-------------|----------|-----|--------|-----|-------|
-|Model Encoder|Framework |AUPRC|AUCROC  |AUPRC|AUCROC |
-|BiLSTM       |EFE       |31.67|79      |52.65|89.89  |
-|             |EFI       |30.62|78.01   |52.54|90.3   |
-|             |LF        |31.72|78.09   |51.67|89.66  |
-|             |LF_pool   |48.08|85.4    |51.82|89.49  |
-|             |SDPRL     |48.96|82.04   |52.77|90.24  |
-|Transformer  |EFE       |32.55|73.81   |52.31|89.53  |
-|             |EFI       |28.3 |78.81   |52.1 |89.58  |
-|             |LF        |32.57|68.17   |52.61|89.93  |
-|             |LF_pool   |39.32|82.44   |52.68|89.81  |
-|             |SDPRL     |47.35|83.48   |53.66|90.6   |
+
+
+|Model Encoder|Framework |Reproduced AUPRC| Model AUPRC|
+|-------------|----------|-----|-----|
+|BiLSTM       |EFE       |31.67|52.65|
+|             |EFI       |30.62|52.54|
+|             |LF        |31.72|51.67|
+|             |LF_pool   |48.08|51.82|
+|             |SDPRL     |48.96|52.77|
+|Transformer  |EFE       |32.55|52.31|
+|             |EFI       |28.3 |52.1 |
+|             |LF        |32.57|52.61|
+|             |LF_pool   |39.32|52.68|
+|             |SDPRL     |47.35|53.66|
+
+
+
+
+|Model Encoder|Framework |Reproduced AUCROC  | Model AUCROC |
+|-------------|----------|--------|-------|
+|BiLSTM       |EFE       |79      |89.89  |
+|             |EFI       |78.01   |90.3   |
+|             |LF        |78.09   |89.66  |
+|             |LF_pool   |85.4    |89.49  |
+|             |SDPRL     |82.04   |90.24  |
+|Transformer  |EFE       |73.81   |89.53  |
+|             |EFI       |78.81   |89.58  |
+|             |LF        |68.17   |89.93  |
+|             |LF_pool   |82.44   |89.81  |
+|             |SDPRL     |83.48   |90.6   |
