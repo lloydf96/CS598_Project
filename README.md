@@ -60,7 +60,7 @@ python missing_expt.py
 ## Results
 
 
-
+### Model and baseline results Area Under Precision Recall Curve
 
 |Model Encoder|Framework |Reproduced AUPRC| Model AUPRC|
 |-------------|----------|-----|-----|
@@ -76,6 +76,7 @@ python missing_expt.py
 |             |SDPRL     |47.35|53.66|
 
 
+### Model and baseline results Area Under Receiver Operating curve
 
 
 |Model Encoder|Framework |Reproduced AUCROC  | Model AUCROC |
@@ -90,3 +91,4 @@ python missing_expt.py
 |             |LF        |68.17   |89.93  |
 |             |LF_pool   |82.44   |89.81  |
 |             |SDPRL     |83.48   |90.6   |
+
