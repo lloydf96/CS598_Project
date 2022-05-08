@@ -299,7 +299,8 @@ def get_data_partial(batch_size = 4,task = 'mort_icu',data_test = False,N_neg = 
 #     intervention_dev = intervention_dev.loc[subject_dev]
 #     y_dev = y_dev.loc[subject_dev]
     if omit == 'vitals':
-        vitals_dev = pd.DataFrame(data = np.zeros(vitals_dev.shape),columns = vitals_dev.columns,index = vitals_dev.index)
+        vitals_dev.loc[:,(slice(None),['mask'])] = 1
+        vitals_dev.loc[:,(slice(None),['mean'])] = 0
     else: 
         intervention_dev = pd.DataFrame(data = np.zeros(intervention_dev.shape),columns = intervention_dev.columns,index = intervention_dev.index)
         
