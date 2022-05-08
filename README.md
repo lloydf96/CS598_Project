@@ -60,8 +60,7 @@ python missing_expt.py
 ## Results
 
 
-|Model Encoder|          |Implementation| In Paper    |
-|             |          |     |        |             |
+|Model Encoder|          | Span <td colspan=2>Implementation| Span <td colspan=2> In Paper    |
 |             |Framework |AUPRC|AUCROC  |AUPRC|AUCROC |
 |-------------|----------|-----|--------|-----|-------|
 |BiLSTM       |EFE       |31.67|79      |52.65|89.89  |
