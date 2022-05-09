@@ -59,6 +59,7 @@ python missing_expt.py
 
 ## Results
 
+## Model performance
 
 ### Model and baseline results Area Under Precision Recall Curve
 
@@ -91,4 +92,28 @@ python missing_expt.py
 |             |LF        |68.17   |89.93  |
 |             |LF_pool   |82.44   |89.81  |
 |             |SDPRL     |83.48   |90.6   |
+
+
+## Durability under missing information
+
+### Area Under Precision Recall Curve
+|Missing Mode|Model|Reproduced AUPRC|Paper AUPRC|
+|-------------|----------|--------|-------|
+|Vital Signs|LF-Pool + BiLSTM|39.75|28.57|
+||SDPRL + BiLSTM|49.36|31.86|
+||LF-Pool + Transformer|34.43|22.22|
+||SDPRL + Transformer|40.99|30.13|
+|Intervention|LF-Pool + BiLSTM|26.28|50.27|
+||SDPRL + BiLSTM|24.03|50.58|
+||LF-Pool + Transformer|16.09|51.1|
+||SDPRL + Transformer|18.4|51.47|
+
+
+
+### Area Under Receiver Operating curve
+
+
+
+
+
 
