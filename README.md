@@ -112,6 +112,17 @@ python missing_expt.py
 
 ### Area Under Receiver Operating curve
 
+|Missing Mode|Model|Reproduced AUROC|Paper AUROC|
+|-------------|----------|--------|-------|
+|Vital Signs|LF-Pool + BiLSTM|84.79|73.48|
+||SDPRL + BiLSTM|80.53|79.71|
+||LF-Pool + Transformer|77.29|68.8|
+||SDPRL + Transformer|76.12|78.23|
+|Intervention|LF-Pool + BiLSTM|75.23|88.98|
+||SDPRL + BiLSTM|71.63|89.67|
+||LF-Pool + Transformer|70.95|89.58|
+||SDPRL + Transformer|69.6|90.33|
+![image](https://user-images.githubusercontent.com/77821166/167340152-797805e5-91e2-4bd3-a601-a0da3f200456.png)
 
 
 
