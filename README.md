@@ -122,7 +122,6 @@ python missing_expt.py
 ||SDPRL + BiLSTM|71.63|89.67|
 ||LF-Pool + Transformer|70.95|89.58|
 ||SDPRL + Transformer|69.6|90.33|
-![image](https://user-images.githubusercontent.com/77821166/167340152-797805e5-91e2-4bd3-a601-a0da3f200456.png)
 
 
 
